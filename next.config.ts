@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
     unoptimized: true
   },
   // Set this to your GitHub Pages URL
-  basePath: process.env.NODE_ENV === 'production' ? '/project-ai-2' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/project-ai-2/' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/ai-data-analysis-app' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/ai-data-analysis-app/' : '',
 };
 
 export default nextConfig;
