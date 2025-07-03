@@ -9,7 +9,7 @@ const getApiBaseUrl = (): string => {
     // Production environment (GitHub Pages)
     if (hostname.includes('github.io')) {
       // GitHub Codespaces backend URL
-      return 'https://scaling-doodle-qj5wx946xqw39pvj-8000.app.github.dev';
+      return 'https://psychic-spoon-5j7w94r59q93pv5v-8000.app.github.dev';
     }
 
     // GitHub Codespaces development environment
