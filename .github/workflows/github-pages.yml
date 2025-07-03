@@ -51,31 +51,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Prepare Next.js configuration
-        run: |
-          echo "=== Checking for conflicting config files ==="
-          ls -la next.config.* || echo "No next.config files found"
-          echo ""
-          echo "=== Removing any conflicting next.config.js ==="
-          rm -f next.config.js || echo "No next.config.js to remove"
-          echo ""
-          echo "=== Verifying our Next.js TypeScript config ==="
-          if [ -f "next.config.ts" ]; then
-            echo "✅ next.config.ts exists"
-            cat next.config.ts
-          else
-            echo "❌ next.config.ts not found!"
-            exit 1
-          fi
-          echo ""
-          echo "=== Final config file check ==="
-          ls -la next.config.*
-
       - name: Build with Next.js
         run: |
           echo "Starting Next.js build for static export..."
           echo "Node version: $(node --version)"
           echo "NPM version: $(npm --version)"
+          echo ""
+          echo "=== Force clean any interfering config files ==="
+          rm -f next.config.js next.config.mjs
+          echo "Config files after cleanup:"
+          ls -la next.config.* || echo "No config files found"
+          echo ""
+          echo "=== Verifying Next.js config content ==="
+          cat next.config.ts
           echo ""
           echo "=== Running build command ==="
           npm run build
