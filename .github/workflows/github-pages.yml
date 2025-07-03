@@ -9,6 +9,7 @@ on:
       - 'package.json'
       - 'next.config.ts'
       - 'tsconfig.json'
+      - '.github/workflows/**'
   workflow_dispatch:
 
 permissions:
@@ -48,97 +49,27 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
 
       - name: Install dependencies
-        run: |
-          echo "Installing dependencies..."
-          npm ci
-          echo "Dependencies installed. Listing node_modules/.bin:"
-          ls -la node_modules/.bin/ | head -10
-
-      - name: Verify environment
-        run: |
-          echo "=== Environment Information ==="
-          echo "Node version: $(node --version)"
-          echo "NPM version: $(npm --version)"
-          echo "Current directory: $(pwd)"
-          echo "Available disk space:"
-          df -h .
-          echo ""
-          echo "=== Package verification ==="
-          npm list next || echo "Next.js not found in dependencies"
-          echo ""
-          echo "=== Next.js binary check ==="
-          which next || echo "next command not found in PATH"
-          ls -la node_modules/.bin/next || echo "next binary not found"
+        run: npm ci
 
       - name: Build with Next.js
         run: |
-          echo "Starting Next.js build..."
-          echo "NODE_ENV: $NODE_ENV"
-          echo "Current directory: $(pwd)"
-          echo "Node version: $(node --version)"
-          echo "NPM version: $(npm --version)"
-          echo "Next.js config:"
-          cat next.config.ts
-          echo ""
-          echo "Package.json build script:"
-          grep -A 3 -B 3 '"build"' package.json
-          echo ""
-          echo "Cleaning any previous build artifacts..."
-          rm -rf .next out || true
-          echo ""
-          echo "Running npm run build..."
-          npm run build 2>&1 | tee build.log
-          BUILD_EXIT_CODE=${PIPESTATUS[0]}
-          echo "Build completed. Exit code: $BUILD_EXIT_CODE"
-          if [ $BUILD_EXIT_CODE -ne 0 ]; then
-            echo "❌ Build failed with exit code $BUILD_EXIT_CODE"
-            echo "Last 100 lines of build output:"
-            tail -100 build.log
-            exit $BUILD_EXIT_CODE
-          fi
+          echo "Starting Next.js build for static export..."
+          npm run build
         env:
           NODE_ENV: production
 
-      - name: Debug - List build output
+      - name: Verify build output
         run: |
-          echo "=== Current directory contents ==="
-          ls -la
-          echo ""
-          echo "=== Checking for out directory ==="
+          echo "Checking build output..."
           if [ -d "out" ]; then
-            echo "✅ out directory exists"
-            echo "Contents of out directory:"
+            echo "✅ Static export successful - out directory created"
+            echo "Files in out directory:"
             ls -la out/
-            echo "Sample files in out:"
-            find out -type f -name "*.html" | head -5
           else
-            echo "❌ out directory does not exist"
-          fi
-          echo ""
-          echo "=== Checking for .next directory ==="
-          if [ -d ".next" ]; then
-            echo "✅ .next directory exists"
-            ls -la .next/
-          else
-            echo "❌ .next directory does not exist"
-          fi
-          echo ""
-          echo "=== Build log (last 50 lines) ==="
-          if [ -f build.log ]; then
-            tail -50 build.log
-          else
-            echo "No build.log found"
-          fi
-          echo ""
-          echo "=== Next.js config ==="
-          cat next.config.ts
-
-      - name: Ensure out directory exists
-        run: |
-          if [ ! -d "out" ]; then
-            echo "❌ out directory not found. Creating empty directory for artifact upload."
-            mkdir -p out
-            echo "<h1>Build Failed</h1><p>The Next.js build did not produce the expected output.</p>" > out/index.html
+            echo "❌ Static export failed - no out directory found"
+            echo "Current directory contents:"
+            ls -la
+            exit 1
           fi
 
       - name: Upload artifact

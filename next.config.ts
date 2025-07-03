@@ -8,8 +8,7 @@ const nextConfig: NextConfig = {
   },
   // GitHub Pages configuration
   basePath: '/ai-data-analysis-app',
-  assetPrefix: '/ai-data-analysis-app/',
-  distDir: 'out'
+  assetPrefix: '/ai-data-analysis-app/'
 };
 
 export default nextConfig;
