@@ -30,7 +30,17 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-1x2m+s9qd4a-%qkdt$@d&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '192.168.1.33', '*.azurewebsites.net', '*']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '0.0.0.0',
+    '192.168.1.33',
+    '*.azurewebsites.net',
+    '*.github.dev',  # GitHub Codespaces
+    '*.githubpreview.dev',  # GitHub Codespaces preview
+    '*.app.github.dev',  # GitHub Codespaces apps
+    '*'  # Allow all hosts (not recommended for production)
+]
 
 
 # Application definition
@@ -156,7 +166,15 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "http://192.168.1.33:3000",
-    "https://neelgarsondiya.github.io",  # Your GitHub Pages domain
+    "https://neel2003gar.github.io",  # Your current GitHub Pages domain
+    "https://neelgarsondiya.github.io",  # Old GitHub Pages domain (if any)
+]
+
+# Allow all GitHub Codespaces domains
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://.*\.github\.dev$",  # GitHub Codespaces
+    r"^https://.*\.githubpreview\.dev$",  # GitHub Codespaces preview
+    r"^https://.*\.app\.github\.dev$",  # GitHub Codespaces apps
 ]
 
 CORS_ALLOW_CREDENTIALS = True

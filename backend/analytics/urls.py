@@ -8,5 +8,5 @@ router.register(r'analyses', AnalysisViewSet)
 router.register(r'visualizations', VisualizationViewSet)
 
 urlpatterns = [
-    path('api/', include(router.urls)),
+    path('', include(router.urls)),
 ]
