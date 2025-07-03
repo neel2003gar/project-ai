@@ -54,8 +54,16 @@ jobs:
         run: |
           echo "Starting Next.js build..."
           echo "NODE_ENV: $NODE_ENV"
-          npm run build
-          echo "Build completed. Checking output..."
+          echo "Current directory: $(pwd)"
+          echo "Next.js config:"
+          cat next.config.ts
+          echo ""
+          echo "Package.json build script:"
+          grep -A 3 -B 3 '"build"' package.json
+          echo ""
+          echo "Running npm run build..."
+          npm run build 2>&1 | tee build.log
+          echo "Build completed. Exit code: $?"
         env:
           NODE_ENV: production
 
@@ -69,6 +77,8 @@ jobs:
             echo "✅ out directory exists"
             echo "Contents of out directory:"
             ls -la out/
+            echo "Sample files in out:"
+            find out -type f -name "*.html" | head -5
           else
             echo "❌ out directory does not exist"
           fi
@@ -81,8 +91,23 @@ jobs:
             echo "❌ .next directory does not exist"
           fi
           echo ""
+          echo "=== Build log (last 50 lines) ==="
+          if [ -f build.log ]; then
+            tail -50 build.log
+          else
+            echo "No build.log found"
+          fi
+          echo ""
           echo "=== Next.js config ==="
           cat next.config.ts
+
+      - name: Ensure out directory exists
+        run: |
+          if [ ! -d "out" ]; then
+            echo "❌ out directory not found. Creating empty directory for artifact upload."
+            mkdir -p out
+            echo "<h1>Build Failed</h1><p>The Next.js build did not produce the expected output.</p>" > out/index.html
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

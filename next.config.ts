@@ -6,9 +6,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  // Set this to your GitHub Pages URL
-  basePath: process.env.NODE_ENV === 'production' ? '/ai-data-analysis-app' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/ai-data-analysis-app/' : '',
+  // GitHub Pages configuration
+  basePath: '/ai-data-analysis-app',
+  assetPrefix: '/ai-data-analysis-app/',
+  distDir: 'out'
 };
 
 export default nextConfig;
