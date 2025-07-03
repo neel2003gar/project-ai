@@ -1,6 +1,6 @@
 // API Configuration
 // This file handles the API base URL for different environments
-// Updated for GitHub Pages deployment
+// Updated for GitHub Pages deployment - trigger workflow
 
 const getApiBaseUrl = (): string => {
   if (typeof window !== 'undefined') {
