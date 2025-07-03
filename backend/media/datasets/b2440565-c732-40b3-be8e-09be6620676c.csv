@@ -1,0 +1,226 @@
+ï»¿name,slug,value,date_of_information,ranking,region
+China,china,"1,810,000,000",2023,1,East and Southeast Asia
+India,india,"1,140,000,000",2022,2,South Asia
+United States,united-states,"386,000,000",2023,3,North America
+Indonesia,indonesia,"352,000,000",2023,4,East and Southeast Asia
+Russia,russia,"245,000,000",2022,5,Central Asia
+Nigeria,nigeria,"224,000,000",2023,6,Africa
+Japan,japan,"219,000,000",2023,7,East and Southeast Asia
+Brazil,brazil,"213,000,000",2023,8,South America
+Bangladesh,bangladesh,"191,000,000",2023,9,South Asia
+Pakistan,pakistan,"189,000,000",2023,10,South Asia
+Iran,iran,"151,000,000",2023,11,Middle East
+Mexico,mexico,"140,000,000",2023,12,North America
+Philippines,philippines,"135,000,000",2023,13,East and Southeast Asia
+Vietnam,vietnam,"131,000,000",2023,14,East and Southeast Asia
+Thailand,thailand,"121,000,000",2023,15,East and Southeast Asia
+South Africa,south-africa,"108,000,000",2023,16,Africa
+Egypt,egypt,"106,000,000",2023,17,Africa
+Germany,germany,"105,000,000",2023,18,Europe
+Turkey (Turkiye),turkey-turkiye,"92,200,000",2023,19,Middle East
+Colombia,colombia,"87,400,000",2023,20,South America
+United Kingdom,united-kingdom,"84,300,000",2023,21,Europe
+"Korea, South",korea-south,"83,900,000",2023,22,East and Southeast Asia
+Italy,italy,"78,500,000",2023,23,Europe
+France,france,"77,400,000",2023,24,Europe
+Ethiopia,ethiopia,"71,400,000",2022,25,Africa
+Tanzania,tanzania,"70,200,000",2023,26,Africa
+Kenya,kenya,"66,700,000",2023,27,Africa
+Burma,burma,"65,500,000",2023,28,East and Southeast Asia
+Argentina,argentina,"62,700,000",2023,29,South America
+Spain,spain,"61,200,000",2023,30,Europe
+Morocco,morocco,"55,900,000",2023,31,Africa
+Cote d'Ivoire,cote-divoire,"53,600,000",2023,32,Africa
+Saudi Arabia,saudi-arabia,"52,500,000",2023,33,Middle East
+Poland,poland,"52,400,000",2023,34,Europe
+Algeria,algeria,"51,500,000",2023,35,Africa
+Ukraine,ukraine,"50,300,000",2023,36,Europe
+Malaysia,malaysia,"50,100,000",2023,37,East and Southeast Asia
+"Congo, Democratic Republic of the",congo-democratic-republic-of-the,"49,800,000",2022,38,Africa
+Iraq,iraq,"45,700,000",2023,39,Middle East
+Uganda,uganda,"42,100,000",2023,40,Africa
+Peru,peru,"41,300,000",2023,41,South America
+Nepal,nepal,"38,200,000",2021,42,South Asia
+Uzbekistan,uzbekistan,"37,500,000",2023,43,Central Asia
+Canada,canada,"36,500,000",2023,44,North America
+Sudan,sudan,"34,700,000",2022,45,Africa
+Ghana,ghana,"33,400,000",2023,46,Africa
+Sri Lanka,sri-lanka,"30,000,000",2023,47,South Asia
+Taiwan,taiwan,"30,000,000",2023,48,East and Southeast Asia
+Australia,australia,"29,100,000",2023,49,Australia and Oceania
+Chile,chile,"26,700,000",2023,50,South America
+Cameroon,cameroon,"26,200,000",2023,51,Africa
+Mali,mali,"25,900,000",2022,52,Africa
+Kazakhstan,kazakhstan,"25,800,000",2023,53,Central Asia
+Angola,angola,"25,700,000",2023,54,Africa
+Madagascar,madagascar,"25,400,000",2023,55,Africa
+Burkina Faso,burkina-faso,"24,700,000",2021,56,Africa
+Hong Kong,hong-kong,"23,800,000",2023,57,East and Southeast Asia
+Romania,romania,"23,200,000",2022,58,Europe
+Afghanistan,afghanistan,"23,000,000",2023,59,South Asia
+Senegal,senegal,"22,400,000",2023,60,Africa
+Netherlands,netherlands,"21,200,000",2023,61,Europe
+United Arab Emirates,united-arab-emirates,"21,200,000",2023,62,Middle East
+Zambia,zambia,"21,200,000",2023,63,Africa
+Guatemala,guatemala,"20,600,000",2023,64,Central America and the Caribbean
+Yemen,yemen,"20,000,000",2023,65,Middle East
+Cambodia,cambodia,"19,500,000",2022,66,East and Southeast Asia
+Venezuela,venezuela,"18,800,000",2022,67,South America
+Ecuador,ecuador,"18,200,000",2023,68,South America
+Tunisia,tunisia,"16,400,000",2023,69,Africa
+Benin,benin,"16,400,000",2023,70,Africa
+Syria,syria,"15,100,000",2023,71,Middle East
+Zimbabwe,zimbabwe,"15,000,000",2023,72,Africa
+Mozambique,mozambique,"15,000,000",2022,73,Africa
+Sweden,sweden,"14,800,000",2023,74,Europe
+Niger,niger,"14,200,000",2021,75,Africa
+Libya,libya,"13,900,000",2022,76,Africa
+Guinea,guinea,"13,800,000",2021,77,Africa
+Israel,israel,"13,800,000",2022,78,Middle East
+Czechia,czechia,"13,600,000",2023,79,Europe
+Malawi,malawi,"12,900,000",2023,80,Africa
+Rwanda,rwanda,"12,800,000",2023,81,Africa
+Portugal,portugal,"12,800,000",2023,82,Europe
+Belgium,belgium,"12,100,000",2023,83,Europe
+Chad,chad,"12,100,000",2022,84,Africa
+Bolivia,bolivia,"12,000,000",2021,85,South America
+Belarus,belarus,"11,800,000",2023,86,Europe
+Tajikistan,tajikistan,"11,600,000",2021,87,Central Asia
+El Salvador,el-salvador,"11,500,000",2022,88,Central America and the Caribbean
+Greece,greece,"11,300,000",2023,89,Europe
+Austria,austria,"11,100,000",2023,90,Europe
+Azerbaijan,azerbaijan,"11,000,000",2023,91,Central Asia
+Switzerland,switzerland,"10,900,000",2023,92,Europe
+Dominican Republic,dominican-republic,"10,400,000",2023,93,Central America and the Caribbean
+Hungary,hungary,"10,200,000",2023,94,Europe
+Singapore,singapore,"9,650,000",2023,95,East and Southeast Asia
+Somalia,somalia,"8,840,000",2022,96,Africa
+Paraguay,paraguay,"8,670,000",2023,97,South America
+Burundi,burundi,"8,650,000",2023,98,Africa
+Serbia,serbia,"8,530,000",2023,99,Europe
+Sierra Leone,sierra-leone,"8,230,000",2021,100,Africa
+Kuwait,kuwait,"8,110,000",2023,101,Middle East
+Bulgaria,bulgaria,"8,010,000",2023,102,Europe
+Honduras,honduras,"7,920,000",2023,103,Central America and the Caribbean
+Jordan,jordan,"7,730,000",2023,104,Middle East
+Kyrgyzstan,kyrgyzstan,"7,680,000",2023,105,Central Asia
+Cuba,cuba,"7,670,000",2023,106,Central America and the Caribbean
+Slovakia,slovakia,"7,630,000",2023,107,Europe
+Denmark,denmark,"7,500,000",2023,108,Europe
+Costa Rica,costa-rica,"7,440,000",2023,109,Central America and the Caribbean
+Haiti,haiti,"7,320,000",2021,110,Central America and the Caribbean
+Nicaragua,nicaragua,"7,220,000",2023,111,Central America and the Caribbean
+Finland,finland,"7,140,000",2023,112,Europe
+Togo,togo,"7,050,000",2023,113,Africa
+Panama,panama,"6,980,000",2023,114,Central America and the Caribbean
+Oman,oman,"6,980,000",2023,115,Middle East
+New Zealand,new-zealand,"6,560,000",2023,116,Australia and Oceania
+Turkmenistan,turkmenistan,"6,250,000",2021,117,Central Asia
+South Sudan,south-sudan,"6,170,000",2023,118,Africa
+Norway,norway,"6,090,000",2022,119,Europe
+"Korea, North",korea-north,"6,000,000",2021,120,East and Southeast Asia
+Georgia,georgia,"5,910,000",2023,121,Central Asia
+"Congo, Republic of the",congo-republic-of-the,"5,870,000",2023,122,Africa
+Ireland,ireland,"5,760,000",2023,123,Europe
+Mauritania,mauritania,"5,360,000",2022,124,Africa
+Mongolia,mongolia,"4,840,000",2023,125,East and Southeast Asia
+Papua New Guinea,papua-new-guinea,"4,820,000",2021,126,East and Southeast Asia
+Laos,laos,"4,820,000",2021,127,East and Southeast Asia
+Uruguay,uruguay,"4,800,000",2023,128,South America
+Qatar,qatar,"4,700,000",2023,129,Middle East
+Croatia,croatia,"4,560,000",2023,130,Europe
+Botswana,botswana,"4,440,000",2023,131,Africa
+Lebanon,lebanon,"4,290,000",2021,132,Middle East
+West Bank,west-bank,"4,150,000",2023,133,Middle East
+Gaza Strip,gaza-strip,"4,150,000",2023,134,Middle East
+Puerto Rico,puerto-rico,"4,040,000",2023,135,Central America and the Caribbean
+Moldova,moldova,"4,010,000",2023,136,Europe
+Armenia,armenia,"3,960,000",2023,137,Central Asia
+Lithuania,lithuania,"3,920,000",2023,138,Europe
+Bosnia and Herzegovina,bosnia-and-herzegovina,"3,870,000",2023,139,Europe
+Jamaica,jamaica,"3,270,000",2023,140,Central America and the Caribbean
+Gabon,gabon,"3,000,000",2022,141,Africa
+Guinea-Bissau,guinea-bissau,"2,760,000",2023,142,Africa
+Slovenia,slovenia,"2,730,000",2023,143,Europe
+"Gambia, The",gambia-the,"2,680,000",2021,144,Africa
+Albania,albania,"2,610,000",2023,145,Europe
+Namibia,namibia,"2,600,000",2023,146,Africa
+Bahrain,bahrain,"2,420,000",2023,147,Middle East
+Latvia,latvia,"2,260,000",2023,148,Europe
+Mauritius,mauritius,"2,100,000",2023,149,Africa
+Estonia,estonia,"2,050,000",2023,150,Europe
+Trinidad and Tobago,trinidad-and-tobago,"2,020,000",2023,151,Central America and the Caribbean
+North Macedonia,north-macedonia,"1,920,000",2023,152,Europe
+Central African Republic,central-african-republic,"1,830,000",2021,153,Africa
+Eritrea,eritrea,"1,800,000",2021,154,Africa
+Kosovo,kosovo,"1,777,859",2022,155,Europe
+Liberia,liberia,"1,650,000",2021,156,Africa
+Lesotho,lesotho,"1,600,000",2023,157,Africa
+Timor-Leste,timor-leste,"1,560,000",2023,158,East and Southeast Asia
+Eswatini,eswatini,"1,520,000",2023,159,Africa
+Cyprus,cyprus,"1,430,000",2023,160,Europe
+Macau,macau,"1,370,000",2023,161,East and Southeast Asia
+Montenegro,montenegro,"1,310,000",2023,162,Europe
+Fiji,fiji,"992,000",2021,163,Australia and Oceania
+Suriname,suriname,"989,000",2023,164,South America
+Luxembourg,luxembourg,"961,000",2023,165,Europe
+Comoros,comoros,"934,000",2023,166,Africa
+Equatorial Guinea,equatorial-guinea,"893,000",2022,167,Africa
+Guyana,guyana,"856,000",2021,168,South America
+Bhutan,bhutan,"752,000",2023,169,South Asia
+Malta,malta,"749,000",2023,170,Europe
+Maldives,maldives,"745,000",2023,171,South Asia
+Cabo Verde,cabo-verde,"590,000",2023,172,Africa
+Djibouti,djibouti,"574,000",2023,173,Africa
+Brunei,brunei,"541,000",2023,174,East and Southeast Asia
+Iceland,iceland,"478,000",2023,175,Europe
+Solomon Islands,solomon-islands,"474,000",2021,176,Australia and Oceania
+"Bahamas, The",bahamas-the,"400,000",2023,177,Central America and the Caribbean
+French Polynesia,french-polynesia,"328,000",2022,178,Australia and Oceania
+Barbados,barbados,"323,000",2022,179,Central America and the Caribbean
+Belize,belize,"264,000",2021,180,Central America and the Caribbean
+New Caledonia,new-caledonia,"260,000",2021,181,Australia and Oceania
+Vanuatu,vanuatu,"256,000",2022,182,Australia and Oceania
+Antigua and Barbuda,antigua-and-barbuda,"184,000",2021,183,Central America and the Caribbean
+Saint Lucia,saint-lucia,"176,000",2022,184,Central America and the Caribbean
+Curacao,curacao,"172,000",2022,185,Central America and the Caribbean
+Seychelles,seychelles,"165,000",2023,186,Africa
+Sao Tome and Principe,sao-tome-and-principe,"152,000",2023,187,Africa
+Aruba,aruba,"141,000",2021,188,Central America and the Caribbean
+Samoa,samoa,"134,000",2022,189,Australia and Oceania
+Andorra,andorra,"126,000",2023,190,Europe
+Jersey,jersey,"124,083",2021,191,Europe
+Grenada,grenada,"112,000",2022,192,Central America and the Caribbean
+Saint Vincent and the Grenadines,saint-vincent-and-the-grenadines,"103,000",2023,193,Central America and the Caribbean
+Cayman Islands,cayman-islands,"100,000",2021,194,Central America and the Caribbean
+Guam,guam,"98,000",2009,195,Australia and Oceania
+Virgin Islands,virgin-islands,"80,000",2021,196,Central America and the Caribbean
+Guernsey,guernsey,"71,485",2021,197,Europe
+Kiribati,kiribati,"70,000",2023,198,Australia and Oceania
+Saint Martin,saint-martin,"68,840",2012,199,Central America and the Caribbean
+Sint Maarten,sint-maarten,"68,840",2012,200,Central America and the Caribbean
+Bermuda,bermuda,"68,000",2021,201,North America
+Greenland,greenland,"67,000",2021,202,North America
+Tonga,tonga,"64,000",2021,203,Australia and Oceania
+Faroe Islands,faroe-islands,"59,000",2021,204,Europe
+Dominica,dominica,"57,000",2022,205,Central America and the Caribbean
+Saint Kitts and Nevis,saint-kitts-and-nevis,"56,000",2023,206,Central America and the Caribbean
+Liechtenstein,liechtenstein,"50,000",2023,207,Europe
+Monaco,monaco,"41,000",2023,208,Europe
+San Marino,san-marino,"41,000",2022,209,Europe
+British Virgin Islands,british-virgin-islands,"38,000",2021,210,Central America and the Caribbean
+Gibraltar,gibraltar,"37,000",2022,211,Europe
+Anguilla,anguilla,"26,000",2021,212,Central America and the Caribbean
+Turks and Caicos Islands,turks-and-caicos-islands,"25,085",2004,213,Central America and the Caribbean
+Palau,palau,"24,000",2023,214,Australia and Oceania
+"Micronesia, Federated States of",micronesia-federated-states-of,"22,000",2021,215,Australia and Oceania
+Northern Mariana Islands,northern-mariana-islands,"20,474",2004,216,Australia and Oceania
+Cook Islands,cook-islands,"17,000",2021,217,Australia and Oceania
+Marshall Islands,marshall-islands,"16,000",2021,218,Australia and Oceania
+Nauru,nauru,"10,000",2021,219,Australia and Oceania
+Tuvalu,tuvalu,"9,000",2021,220,Australia and Oceania
+Falkland Islands (Islas Malvinas),falkland-islands-islas-malvinas,"6,000",2021,221,South America
+Montserrat,montserrat,"5,000",2020,222,Central America and the Caribbean
+"Saint Helena, Ascension, and Tristan da Cunha",saint-helena-ascension-and-tristan-da-cunha,"4,000",2021,223,Africa
+American Samoa,american-samoa,"2,250",2009,224,Australia and Oceania
+Wallis and Futuna,wallis-and-futuna,0,2018,225,Australia and Oceania

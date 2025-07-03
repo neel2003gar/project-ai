@@ -1,0 +1,19 @@
+Product,Sales,Price,Profit,Region,Month
+Widget A,150,29.99,10.50,North,January
+Widget B,200,39.99,15.75,South,January
+Widget C,175,19.99,8.25,East,January
+Widget A,180,29.99,10.50,West,February
+Widget B,220,39.99,15.75,North,February
+Widget C,160,19.99,8.25,South,February
+Widget A,165,29.99,10.50,East,March
+Widget B,240,39.99,15.75,West,March
+Widget C,190,19.99,8.25,North,March
+Widget A,200,29.99,10.50,South,April
+Widget B,210,39.99,15.75,East,April
+Widget C,185,19.99,8.25,West,April
+Widget A,175,29.99,10.50,North,May
+Widget B,225,39.99,15.75,South,May
+Widget C,170,19.99,8.25,East,May
+Widget A,190,29.99,10.50,West,June
+Widget B,235,39.99,15.75,North,June
+Widget C,195,19.99,8.25,South,June

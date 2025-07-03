@@ -1,0 +1,21 @@
+name,age,salary,department,experience_years,satisfaction_score
+John Doe,28,65000,Engineering,3,8.5
+Jane Smith,32,72000,Marketing,5,7.2
+Mike Johnson,45,95000,Engineering,12,9.1
+Sarah Wilson,29,58000,Sales,2,6.8
+David Brown,38,85000,Engineering,8,8.7
+Lisa Davis,31,69000,Marketing,4,7.9
+Tom Wilson,42,92000,Management,10,8.2
+Anna Garcia,26,55000,Sales,1,7.4
+Chris Lee,35,78000,Engineering,6,8.0
+Maria Lopez,40,88000,Management,9,8.8
+Robert Taylor,33,71000,Marketing,5,7.6
+Jessica Chen,27,62000,Engineering,2,7.8
+Kevin White,37,82000,Management,7,8.3
+Laura Johnson,30,67000,Sales,3,7.1
+Mark Davis,44,98000,Engineering,13,9.3
+Amy Brown,25,52000,Sales,1,6.9
+Daniel Wilson,39,86000,Management,8,8.5
+Nicole Anderson,34,74000,Marketing,6,7.7
+Ryan Martinez,41,91000,Engineering,11,8.9
+Sophia Miller,28,64000,Sales,2,7.3
