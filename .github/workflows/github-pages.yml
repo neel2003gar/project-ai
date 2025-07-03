@@ -30,7 +30,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
           cache: 'npm'
 
       - name: Setup Pages
@@ -48,22 +48,54 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
 
       - name: Install dependencies
-        run: npm ci
+        run: |
+          echo "Installing dependencies..."
+          npm ci
+          echo "Dependencies installed. Listing node_modules/.bin:"
+          ls -la node_modules/.bin/ | head -10
+
+      - name: Verify environment
+        run: |
+          echo "=== Environment Information ==="
+          echo "Node version: $(node --version)"
+          echo "NPM version: $(npm --version)"
+          echo "Current directory: $(pwd)"
+          echo "Available disk space:"
+          df -h .
+          echo ""
+          echo "=== Package verification ==="
+          npm list next || echo "Next.js not found in dependencies"
+          echo ""
+          echo "=== Next.js binary check ==="
+          which next || echo "next command not found in PATH"
+          ls -la node_modules/.bin/next || echo "next binary not found"
 
       - name: Build with Next.js
         run: |
           echo "Starting Next.js build..."
           echo "NODE_ENV: $NODE_ENV"
           echo "Current directory: $(pwd)"
+          echo "Node version: $(node --version)"
+          echo "NPM version: $(npm --version)"
           echo "Next.js config:"
           cat next.config.ts
           echo ""
           echo "Package.json build script:"
           grep -A 3 -B 3 '"build"' package.json
           echo ""
+          echo "Cleaning any previous build artifacts..."
+          rm -rf .next out || true
+          echo ""
           echo "Running npm run build..."
           npm run build 2>&1 | tee build.log
-          echo "Build completed. Exit code: $?"
+          BUILD_EXIT_CODE=${PIPESTATUS[0]}
+          echo "Build completed. Exit code: $BUILD_EXIT_CODE"
+          if [ $BUILD_EXIT_CODE -ne 0 ]; then
+            echo "❌ Build failed with exit code $BUILD_EXIT_CODE"
+            echo "Last 100 lines of build output:"
+            tail -100 build.log
+            exit $BUILD_EXIT_CODE
+          fi
         env:
           NODE_ENV: production
 
