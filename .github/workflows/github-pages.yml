@@ -46,7 +46,20 @@ jobs:
       - name: Build Next.js application
         run: |
           echo "Building Next.js application for static export..."
+          echo "Next.js version:"
+          npx next --version
+          echo "Current next.config.ts content:"
+          cat next.config.ts
+          echo "Building with Next.js..."
           npm run build
+          echo "Build complete. Directory contents:"
+          ls -la
+          echo "Checking .next directory:"
+          ls -la .next/ || echo "No .next directory"
+          echo "Checking for out directory:"
+          ls -la out/ || echo "No out directory found"
+          echo "Let's check if there's a dist directory:"
+          ls -la dist/ || echo "No dist directory found"
         env:
           NODE_ENV: production
           CI: true
