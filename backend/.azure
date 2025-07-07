@@ -1,0 +1,9 @@
+[build]
+command = "pip install -r requirements.txt && python manage.py collectstatic --noinput"
+
+[run]
+command = "gunicorn --bind=0.0.0.0:$PORT --timeout 600 --workers 2 data_analysis_api.wsgi:application"
+
+[environment]
+DJANGO_SETTINGS_MODULE = "data_analysis_api.settings_azure"
+PYTHONPATH = "/home/site/wwwroot"
