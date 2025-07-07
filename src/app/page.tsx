@@ -1,4 +1,5 @@
 "use client";
+// Updated: Dec 19, 2024 - Config fixed, triggering deployment
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
