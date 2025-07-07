@@ -19,7 +19,7 @@ DEBUG = False
 
 # Azure App Service hostname pattern
 ALLOWED_HOSTS = [
-    'project-ai-2-app.azurewebsites.net',  # Your Azure app name
+    'neel-ai-analytics-backend.azurewebsites.net',  # Your Azure app name
     '*.azurewebsites.net',
     'localhost',
     '127.0.0.1',
@@ -149,9 +149,9 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOW_ALL_ORIGINS = False  # Set to False for production security
+CORS_ALLOW_ALL_ORIGINS = True  # Temporarily set to True for testing
 
-# Updated: Dec 19, 2024 - Trigger backend redeployment
+# Updated: Dec 19, 2024 - Testing CORS fix
 
 # Security settings for production
 SECURE_BROWSER_XSS_FILTER = True
