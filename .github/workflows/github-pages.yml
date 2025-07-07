@@ -43,6 +43,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Clean conflicting config files
+        run: |
+          echo "Removing any conflicting config files..."
+          rm -f next.config.js
+          echo "Using next.config.ts only"
+          ls -la next.config.*
+
       - name: Build Next.js application
         run: |
           echo "Building Next.js application for static export..."
