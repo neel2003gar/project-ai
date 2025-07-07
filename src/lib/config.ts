@@ -1,6 +1,6 @@
 // API Configuration
 // This file handles the API base URL for different environments
-// Updated for GitHub Pages deployment - trigger workflow
+// Updated for Azure backend deployment
 
 const getApiBaseUrl = (): string => {
   if (typeof window !== 'undefined') {
@@ -8,8 +8,8 @@ const getApiBaseUrl = (): string => {
 
     // Production environment (GitHub Pages)
     if (hostname.includes('github.io')) {
-      // GitHub Codespaces backend URL
-      return 'https://psychic-spoon-5j7w94r59q93pv5v-8000.app.github.dev';
+      // Azure backend URL (update this with your actual Azure app name)
+      return 'https://neel-ai-analytics-backend.azurewebsites.net';
     }
 
     // GitHub Codespaces development environment
@@ -27,8 +27,8 @@ const getApiBaseUrl = (): string => {
     }
   }
 
-  // Server-side rendering fallback
-  return 'http://localhost:8000';
+  // Server-side rendering fallback (Azure backend)
+  return 'https://neel-ai-analytics-backend.azurewebsites.net';
 };
 
 export const API_BASE_URL = getApiBaseUrl();

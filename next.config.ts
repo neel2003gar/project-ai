@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
     unoptimized: true
   },
   // GitHub Pages configuration
-  basePath: '/ai-data-analysis-app',
-  assetPrefix: '/ai-data-analysis-app/'
+  basePath: '/project-ai-2',
+  assetPrefix: '/project-ai-2/'
 };
 
 export default nextConfig;
