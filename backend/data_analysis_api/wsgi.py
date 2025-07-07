@@ -11,7 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-# Use minimal settings for Azure troubleshooting
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'data_analysis_api.settings_minimal')
+# Use Azure settings for production
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'data_analysis_api.settings_azure')
 
 application = get_wsgi_application()

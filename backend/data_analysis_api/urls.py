@@ -22,16 +22,28 @@ from django.http import JsonResponse
 
 def api_root(request):
     return JsonResponse({
-        'message': 'AI Data Analysis API - Minimal Test',
-        'status': 'working',
-        'timestamp': '2024-12-19 16:10:00',
-        'azure_test': True
+        'message': 'AI Data Analysis API',
+        'version': '1.0.0',
+        'status': 'running',
+        'timestamp': '2024-12-19 16:20:00',
+        'endpoints': {
+            'datasets': '/api/datasets/',
+            'analyses': '/api/analyses/',
+            'visualizations': '/api/visualizations/',
+            'auth': {
+                'signup': '/api/auth/signup/',
+                'signin': '/api/auth/signin/',
+                'signout': '/api/auth/signout/',
+                'profile': '/api/auth/profile/'
+            }
+        }
     })
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', api_root, name='api_root'),
-    path('', api_root, name='home'),  # Add root path for testing
+    path('api/', include('analytics.urls')),
+    path('api/', include('authentication.urls')),
 ]
 
 # Serve media files during development
