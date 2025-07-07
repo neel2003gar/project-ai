@@ -4,12 +4,16 @@
 
 echo "Starting Azure App Service startup script..."
 
+# Navigate to the correct directory
+cd /home/site/wwwroot
+
 # Install dependencies
 echo "Installing Python dependencies..."
-pip install -r requirements-prod.txt
+pip install -r requirements.txt
 
 # Set Django settings module
 export DJANGO_SETTINGS_MODULE=data_analysis_api.settings_azure
+echo "Using Django settings: $DJANGO_SETTINGS_MODULE"
 
 # Collect static files
 echo "Collecting static files..."
