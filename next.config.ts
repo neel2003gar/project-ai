@@ -8,9 +8,7 @@ const nextConfig: NextConfig = {
   },
   // GitHub Pages configuration
   basePath: '/project-ai-2',
-  assetPrefix: '/project-ai-2/',
-  // Ensure static files are handled correctly
-  distDir: 'out'
+  assetPrefix: '/project-ai-2/'
 };
 
 export default nextConfig;

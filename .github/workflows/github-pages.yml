@@ -49,6 +49,7 @@ jobs:
           npm run build
         env:
           NODE_ENV: production
+          CI: true
 
       - name: Verify build output
         run: |
@@ -57,6 +58,9 @@ jobs:
             echo "✅ Static export successful - out directory created"
             echo "Files in out directory:"
             ls -la out/
+            # Ensure .nojekyll exists in output
+            touch out/.nojekyll
+            echo "✅ .nojekyll file added"
           else
             echo "❌ Static export failed - no out directory found"
             echo "Current directory contents:"
