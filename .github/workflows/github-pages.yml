@@ -46,37 +46,18 @@ jobs:
       - name: Build Next.js application
         run: |
           echo "Building Next.js application for static export..."
-          echo "Next.js version:"
-          npx next --version
-          echo "Current next.config.ts content:"
-          cat next.config.ts
-          echo "Building with Next.js..."
           npm run build
-          echo "Build complete. Directory contents:"
-          ls -la
-          echo "Checking .next directory:"
-          ls -la .next/ || echo "No .next directory"
-          echo "Checking for out directory:"
-          ls -la out/ || echo "No out directory found"
-          echo "Let's check if there's a dist directory:"
-          ls -la dist/ || echo "No dist directory found"
         env:
           NODE_ENV: production
           CI: true
 
       - name: Verify build output
         run: |
-          echo "Checking build output..."
           if [ -d "out" ]; then
-            echo "✅ Static export successful - out directory created"
-            echo "Files in out directory:"
-            ls -la out/
-            # Ensure .nojekyll exists in output
+            echo "✅ Static export successful"
             touch out/.nojekyll
-            echo "✅ .nojekyll file added"
           else
             echo "❌ Static export failed - no out directory found"
-            echo "Current directory contents:"
             ls -la
             exit 1
           fi

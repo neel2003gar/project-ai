@@ -17,6 +17,11 @@
 /.next/
 /out/
 
+# Prevent config conflicts
+next.config.js
+next.config.mjs
+!next.config.ts
+
 # production
 /build
 
@@ -35,6 +40,24 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# Backend Python
+backend/__pycache__/
+backend/*.pyc
+backend/db.sqlite3
+
+# Deployment artifacts to prevent conflicts
+.deployment
+*.deployment
+oryx-manifest.toml
+web.config
+railway.toml
+runtime.txt
+Procfile
+*deploy*.sh
+*deploy*.bat
+deployment-*.md
+alternative-*.md
 
 # typescript
 *.tsbuildinfo
