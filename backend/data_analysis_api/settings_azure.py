@@ -19,7 +19,7 @@ DEBUG = False
 
 # Azure App Service hostname pattern
 ALLOWED_HOSTS = [
-    'neel-ai-analytics-backend.azurewebsites.net',  # Your Azure app name
+    'project-ai-2-app.azurewebsites.net',  # Your Azure app name
     '*.azurewebsites.net',
     'localhost',
     '127.0.0.1',
