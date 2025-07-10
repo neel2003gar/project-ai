@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: ai-analytics-backend
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: |
+      cd backend &&
+      pip install -r requirements.txt &&
+      python manage.py collectstatic --noinput &&
+      python manage.py migrate
+    startCommand: cd backend && gunicorn --bind=0.0.0.0:$PORT data_analysis_api.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: data_analysis_api.settings_render
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+    autoDeploy: true

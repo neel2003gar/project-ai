@@ -8,8 +8,8 @@ const getApiBaseUrl = (): string => {
 
     // Production environment (GitHub Pages)
     if (hostname.includes('github.io')) {
-      // Azure backend URL
-      return 'https://neel-ai-analytics-backend.azurewebsites.net';
+      // Render backend URL
+      return 'https://ai-analytics-backend.onrender.com';
     }
 
     // GitHub Codespaces development environment
@@ -27,8 +27,8 @@ const getApiBaseUrl = (): string => {
     }
   }
 
-  // Server-side rendering fallback (Azure backend)
-  return 'https://neel-ai-analytics-backend.azurewebsites.net';
+  // Server-side rendering fallback (Render backend)
+  return 'https://ai-analytics-backend.onrender.com';
 };
 
 export const API_BASE_URL = getApiBaseUrl();

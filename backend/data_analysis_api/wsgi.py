@@ -11,7 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-# Use Azure settings for production
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'data_analysis_api.settings_azure')
+# Use Render settings for production
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'data_analysis_api.settings_render')
 
 application = get_wsgi_application()
