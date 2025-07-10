@@ -8,8 +8,8 @@ const getApiBaseUrl = (): string => {
 
     // Production environment (GitHub Pages)
     if (hostname.includes('github.io')) {
-      // Render backend URL
-      return 'https://ai-analytics-backend.onrender.com';
+      // Render backend URL (actual deployed URL)
+      return 'https://ai-analytics-backend-099v.onrender.com';
     }
 
     // GitHub Codespaces development environment
