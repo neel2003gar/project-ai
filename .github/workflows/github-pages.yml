@@ -3,13 +3,6 @@ name: Deploy Frontend to GitHub Pages
 on:
   push:
     branches: [main, master]
-    paths:
-      - 'src/**'
-      - 'public/**'
-      - 'package.json'
-      - 'next.config.ts'
-      - 'tsconfig.json'
-      - '.github/workflows/github-pages.yml'
   workflow_dispatch:
 
 permissions:
