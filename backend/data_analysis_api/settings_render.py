@@ -18,7 +18,8 @@ DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
 
 # Render hostname
 ALLOWED_HOSTS = [
-    'ai-analytics-backend.onrender.com',  # Replace with your actual Render app name
+    'ai-analytics-backend-099v.onrender.com',  # Actual Render app URL
+    'ai-analytics-backend.onrender.com',       # Backup/generic URL
     '*.onrender.com',
     'localhost',
     '127.0.0.1',
