@@ -16,7 +16,7 @@ services:
       - key: SECRET_KEY
         generateValue: true
       - key: DEBUG
-        value: "False"
+        value: 'False'
       - key: PYTHON_VERSION
-        value: "3.11.0"
+        value: '3.11.0'
     autoDeploy: true

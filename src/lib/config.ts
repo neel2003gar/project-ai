@@ -1,6 +1,6 @@
 // API Configuration
 // This file handles the API base URL for different environments
-// Updated for Azure backend deployment
+// Updated for Render backend deployment
 
 const getApiBaseUrl = (): string => {
   if (typeof window !== 'undefined') {
