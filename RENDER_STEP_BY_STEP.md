@@ -80,7 +80,10 @@ Verify these environment variables are set:
 - `DJANGO_SETTINGS_MODULE`: `data_analysis_api.settings_render`
 - `SECRET_KEY`: (Auto-generated)
 - `DEBUG`: `False`
+- `PORT`: `10000` (Render's standard port)
 - `PYTHON_VERSION`: `3.11.0`
+
+**Note**: Render automatically provides the `PORT` environment variable set to `10000`. The start command uses `$PORT` to bind to this port correctly.
 
 ---
 
@@ -230,31 +233,39 @@ If Render assigns a different URL than expected:
 
 1. **Build Fails**
 
-   ```
+   ```text
    Solution: Check requirements.txt, ensure all dependencies are listed
    ```
 
 2. **Server Won't Start**
 
-   ```
+   ```text
    Solution: Verify WSGI configuration, check start command
    ```
 
-3. **Static Files Missing**
+3. **Port Binding Issues**
 
+   ```text
+   Problem: Server fails to start due to port binding
+   Solution: Ensure start command uses $PORT variable (Render sets PORT=10000)
+   Verify: cd backend && gunicorn --bind=0.0.0.0:$PORT data_analysis_api.wsgi:application
    ```
+
+4. **Static Files Missing**
+
+   ```text
    Solution: Ensure collectstatic runs in build command
    ```
 
-4. **Database Errors**
+5. **Database Errors**
 
-   ```
+   ```text
    Solution: Check migration files, ensure PostgreSQL compatibility
    ```
 
-5. **CORS Errors**
+6. **CORS Errors**
 
-   ```
+   ```text
    Solution: Verify CORS settings in Django settings_render.py
    ```
 
