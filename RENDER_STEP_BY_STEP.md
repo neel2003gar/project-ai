@@ -251,7 +251,15 @@ If Render assigns a different URL than expected:
    Verify: cd backend && gunicorn --bind=0.0.0.0:$PORT data_analysis_api.wsgi:application
    ```
 
-4. **Static Files Missing**
+4. **ALLOWED_HOSTS Error**
+
+   ```text
+   Problem: Invalid HTTP_HOST header error
+   Solution: Add actual Render URL to ALLOWED_HOSTS in settings_render.py
+   Example: 'ai-analytics-backend-099v.onrender.com'
+   ```
+
+5. **Static Files Missing**
 
    ```text
    Solution: Ensure collectstatic runs in build command
